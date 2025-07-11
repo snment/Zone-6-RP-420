@@ -84,7 +84,7 @@ Cfg = {
     --  / / (_) | | | |  __/\__ \
     -- /___\___/|_| |_|\___||___/
     Zones = {
-        enabled = true,                        -- Determines if the sell zones feature is enabled.
+        enabled = false,                        -- Determines if the sell zones feature is enabled.
         zoneCoords = {                         -- You can add as many zones as you like, following formatting. (https://overextended.dev/ox_lib/Modules/Zones/Shared#zone-creation-script)
             {
                 vec3(123.16, -1937.44, 20.72), -- This zone covers most of the Grove area.

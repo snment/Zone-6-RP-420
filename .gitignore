@@ -28,10 +28,10 @@ txData/ESXLegacy_6BBD04.base/resources/\[weapons\]/G17/stream/
 Artifacts/
 
 # FiveM Server Files
-FXServer.exe
+## FXServer.exe
 alpine/
 citizen/
-server.cfg
+## server.cfg
 server-data/
 
 # FiveM Cache and Temporary Files
