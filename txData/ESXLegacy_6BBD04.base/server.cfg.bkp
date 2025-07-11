@@ -1,0 +1,103 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # #
+#    ___ _____  __  _    ___ ___   _   _____   __   #
+#   | __/ __\ \/ / | |  | __/ __| /_\ / __\ \ / /   #
+#   | _|\__ \>  <  | |__| _| (_ |/ _ \ (__ \ V /    #
+#   |___|___/_/\_\ |____|___\___/_/ \_\___| |_|     #
+#                                                   #
+#     Discord: https://discord.esx-framework.org/   #
+#     Website: https://esx-framework.org/           #
+#     CFG Docs: https://aka.cfx.re/server-commands  #
+# # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+
+# Editable Settings
+# -----------------
+# You can edit the following:
+
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+
+# Set Tags
+sets tags "default, esx, esx legacy, official, roleplay"
+
+# Optional Editable Settings
+# --------------------------
+# You may edit the following:
+
+sv_licenseKey "cfxk_Cx4GoZZ45hxotPwq8clS_2mL1cY"
+sv_hostname "ZONE 6 RP "
+sets sv_projectName " ZONE 6 RP "
+`sets sv_projectDesc "ZONE 6 is a living, breathing city where every alley has a story and every corner could be your last. From backdoor deals to full-blown turf wars, the action never stops."
+set mysql_connection_string "mysql://root@localhost/ESXLegacy_6BBD04?charset=utf8mb4"
+load_server_icon esxLogo.png
+sv_maxclients 48
+sets locale "root-AQ" 
+sv_enforceGameBuild 3258
+set resources_useSystemChat true
+
+# System Administrators
+# ---------------------
+# Add system admins
+
+add_principal group.admin group.user
+add_ace group.admin command allow # allow all commands
+add_ace group.admin command.quit deny # but don't allow quit
+add_ace resource.es_extended command.add_ace allow
+add_ace resource.es_extended command.add_principal allow
+add_ace resource.es_extended command.remove_principal allow
+add_ace resource.es_extended command.stop allow
+add_principal identifier.fivem:15199205 group.admin #SNMENT
+add_principal identifier.discord:771968937281585163 group.admin #SNMENT
+add_principal identifier.fivem:15200768 group.admin #Entei
+add_principal identifier.discord:196090002529189898 group.admin #Entei
+add_principal identifier.fivem:17086814 group.admin #NEO
+add_principal identifier.discord:188488565087272961 group.admin #NEO
+
+# pma-voice Config
+# ----------------
+setr voice_enableRadioAnim 1
+setr voice_useNativeAudio true
+setr voice_useSendingRangeOnly true
+setr inventory:framework "esx"
+
+# security-convars
+# ----------------
+sv_enableNetworkedSounds false
+sv_enableNetworkedScriptEntityStates false
+sv_enableNetworkedPhoneExplosions false
+sv_filterRequestControl 2
+
+# ...existing code...
+
+# Default & Standalone Resources
+ensure chat
+ensure spawnmanager
+ensure hardcap
+ensure oxmysql
+ensure ox_lib
+ensure bob74_ipl
+ensure wasabi_backpack
+# Core Resources
+ensure ox_inventory
+ensure es_extended
+ensure qtarget
+ensure ox_target
+
+# Weapons & Scripts
+ensure [weapons]
+# ESX Legacy Core
+ensure [core]
+
+# ESX Addons
+ensure [standalone]
+ensure [esx_addons]
+ensure [Scripts]
+
+## Add-on Mods/Script
+ensure r_bridge
+ensure r_drugsales
+ensure FearX_OxRob
+ensure omes_banking
+
+
+# ...existing code..
