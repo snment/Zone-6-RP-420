@@ -97,6 +97,9 @@ backups/
 *.tar
 *.gz
 *.png
+*.mp3
+*.wav
+*.ogg
 
 # Resource Specific Ignores
 resources/*/node_modules/
