@@ -63,13 +63,13 @@ return {
 		}
 	},
 
-	[ 'trap_phone' ] = {
+	['r_trapphone'] = {
 		label = 'Trap Phone',
-		weight = 100,
+		weight = 35,
 		stack = false,
-		close = false,
+		close = true,
 		client = {
-			export = 'r_drugsales.openTrapPhone'
+			image = 'r_trapphone.png' -- Add this line for the image
 		}
 	},
 
@@ -82,7 +82,7 @@ return {
 			usetime = 5000
 		}
 	},
-	
+
 	['bandage'] = {
 		label = 'Bandage',
 		weight = 115,
@@ -259,7 +259,7 @@ return {
 		stack = true,
 		close = true,
 	},
-	
+
 	["blowpipe"] = {
 		label = "Blowtorch",
 		weight = 2,
@@ -281,22 +281,22 @@ return {
 		close = true,
 	},
 
-	["weed"] = {
-		label = "Weed",
+	['weed'] = {
+		label = 'Weed',
 		weight = 3,
 		stack = true,
 		close = true,
 	},
 
-	["cocaine"] = {
-		label = "Cocaine",
+	['cocaine'] = {
+		label = 'Cocaine',
 		weight = 3,
 		stack = true,
 		close = true,
 	},
 
-	["meth"] = {
-		label = "Meth",
+	['meth'] = {
+		label = 'Meth',
 		weight = 3,
 		stack = true,
 		close = true,

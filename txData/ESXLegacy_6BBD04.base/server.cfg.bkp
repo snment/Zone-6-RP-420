@@ -80,7 +80,7 @@ ensure wasabi_backpack
 # Core Resources
 ensure ox_inventory
 ensure es_extended
-ensure qtarget
+# ensure qtarget # might not be needed
 ensure ox_target
 
 # Weapons & Scripts

@@ -20,6 +20,9 @@ txData/ESXLegacy_6BBD04.base/resources/\[cfx-default\]/\[system\]/\[builders\]/
 txData/ESXLegacy_6BBD04.base/resources/ox_inventory/web/
 txData/ESXLegacy_6BBD04.base/resources/ox_lib/web/build/
 txData/ESXLegacy_6BBD04.base/resources/\[weapons\]/G17/stream/
+# new
+txData/ESXLegacy_6BBD04.base/resources/\[esx_addons\]/esx_property/properties.json 
+#
 
 # Large binary files
 *.dll
@@ -31,7 +34,7 @@ Artifacts/
 FXServer.exe
 alpine/
 citizen/
-## server.cfg
+server.cfg
 server-data/
 
 # FiveM Cache and Temporary Files
