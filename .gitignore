@@ -4,8 +4,8 @@
 txData/default/data/
 txData/*/data/
 txData/default/cache/
+txData/ESXLegacy_6BBD04.base/cache/
 txData/*/cache/
-txData/
 
 # Large binary files
 *.dll

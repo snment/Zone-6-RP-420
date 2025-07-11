@@ -1,0 +1,20 @@
+Config = {}
+Config.AdminGroups = {'admin', 'superadmin', 'owner'}
+Config.MaxInteractionPoints = 100
+Config.DrawDistance = 100.0
+Config.DefaultBlipSprite = 478
+Config.DefaultBlipColor = 2
+Config.DefaultBlipScale = 0.8
+Config.DefaultRadius = 3.0
+Config.MarkerType = 1
+Config.MarkerColor = {r = 0, g = 255, b = 0, a = 100}
+Config.MarkerBobUpAndDown = false
+Config.MarkerRotate = false
+Config.CreateDebounceTime = 1000 -- Time in milliseconds to debounce creation of interaction points
+Config.ShowBlips = true -- Set to false to disable blips for interaction points
+Config.ShowMarkers = true -- Set to false to disable markers for interaction points
+Config.NearbyUpdateInterval = 1000 -- Time in milliseconds to update nearby interaction points
+Config.NearbyThreshold = 50.0 -- Distance (in meters) to consider a point "nearby"
+Config.UpdateInterval = 0 -- Time in milliseconds to update interaction points
+Config.Use3DText = true -- Set to false to disable 3D text for interaction
+Config.Inventory = 'ox_inventory' -- Set to 'ox_inventory' if using ox_inventory, or your inventory name
