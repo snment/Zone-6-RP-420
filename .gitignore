@@ -8,15 +8,15 @@ txData/ESXLegacy_6BBD04.base/cache/
 txData/*/cache/
 
 # Specific resources that should not be tracked
-txData/ESXLegacy_6BBD04.base/resources/[weapons]/G17/stream
-txData/ESXLegacy_6BBD04.base/resources/[standalone]/bob74_ipl/stream
-txData/ESXLegacy_6BBD04.base/resources/[standalone]/oxmysql/dist
-txData/ESXLegacy_6BBD04.base/resources/[standalone]/oxmysql/web
+txData/ESXLegacy_6BBD04.base/resources/[weapons]/G17/stream/
+txData/ESXLegacy_6BBD04.base/resources/[standalone]/bob74_ipl/stream/
+txData/ESXLegacy_6BBD04.base/resources/[standalone]/oxmysql/dist/
+txData/ESXLegacy_6BBD04.base/resources/[standalone]/oxmysql/web/
 txData/ESXLegacy_6BBD04.base/resources/[standalone]/pma-voice/ui/
 txData/ESXLegacy_6BBD04.base/resources/[standalone]/pma-voice/voice-ui/
-txData/ESXLegacy_6BBD04.base/resources/[esx_addons]/esx_hud/stream
-txData/ESXLegacy_6BBD04.base/resources/[esx_addons]/esx_hud/web
-txData/ESXLegacy_6BBD04.base/resources/[cfx-default]/[system]/[builders]
+txData/ESXLegacy_6BBD04.base/resources/[esx_addons]/esx_hud/stream/
+txData/ESXLegacy_6BBD04.base/resources/[esx_addons]/esx_hud/web/
+txData/ESXLegacy_6BBD04.base/resources/[cfx-default]/[system]/[builders]/
 txData/ESXLegacy_6BBD04.base/resources/ox_inventory/web/
 txData/ESXLegacy_6BBD04.base/resources/ox_lib/web/build/
 txData/ESXLegacy_6BBD04.base/resources/[weapons]/G17/stream/
