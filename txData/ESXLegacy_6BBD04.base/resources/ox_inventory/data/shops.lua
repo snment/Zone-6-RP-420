@@ -58,25 +58,26 @@ return {
 		}
 	},
 
-	YouTool = {
-		name = 'YouTool',
-		blip = {
-			id = 402, colour = 69, scale = 0.8
-		}, inventory = {
-			{ name = 'lockpick', price = 10 },
-			{ name = 'drill', price = 5000 },
-			{ name = 'backpack', price = 20000 },
-			{ name = 'trap_phone', price = 10000 },
-			{ name = 'radio', price = 5000 },
-			{ name = 'repair_kit', price = 15000 },
-			{ name = 'identification', price = 5000 },
-		}, locations = {
-			vec3(2748.0, 3473.0, 55.67),
-			vec3(342.99, -1298.26, 32.51)
-		}, targets = {
-			{ loc = vec3(2746.8, 3473.13, 55.67), length = 0.6, width = 3.0, heading = 65.0, minZ = 55.0, maxZ = 56.8, distance = 3.0 }
-		}
-	},
+
+YouTool = {
+    name = 'YouTool',
+    blip = {
+        id = 402, colour = 69, scale = 0.8
+    }, inventory = {
+        { name = 'lockpick', price = 10 },
+        { name = 'drill', price = 5000 },
+        { name = 'backpack', price = 20000 },
+        { name = 'r_trapphone', price = 50000 }, -- Updated: correct item name and price
+        { name = 'radio', price = 5000 },
+        { name = 'repair_kit', price = 15000 },
+        { name = 'identification', price = 5000 },
+    }, locations = {
+        vec3(2748.0, 3473.0, 55.67),
+        vec3(342.99, -1298.26, 32.51)
+    }, targets = {
+        { loc = vec3(2746.8, 3473.13, 55.67), length = 0.6, width = 3.0, heading = 65.0, minZ = 55.0, maxZ = 56.8, distance = 3.0 }
+    }
+},
 
 	Ammunation = {
 		name = 'Ammunation',

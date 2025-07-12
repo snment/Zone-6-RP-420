@@ -22,10 +22,10 @@ Cfg = {
     --  \__,_|_|___/ .__/ \__,_|\__\___|_| |_|
     --             |_|
     Dispatch = {
-        resource = 'linden_outlawalert', -- 'linden_outlawalert', 'ps-dispatch', 'cd_dispatch', 'rcore_dispatch', 'custom' (client/dispatch.lua), false to disable
-        notifyOnReject = true,           -- Determines if police are notified on bad sales.
-        reportOdds = 50,                 -- Determines the percent chance of a bad sale resulting in police being notified. (1-100)
-        policeJobs = {                   -- Determines the police jobs that can be notified. (e.g. 'police', 'sheriff')
+        resource = false,             -- Disabled police dispatch - was 'linden_outlawalert'
+        notifyOnReject = false,       -- Disabled police notification on bad sales
+        reportOdds = 0,               -- 0% chance of police being notified (was 50)
+        policeJobs = {                -- Determines the police jobs that can be notified. (e.g. 'police', 'sheriff')
             'police',
             -- 'sheriff',
         },
@@ -37,30 +37,30 @@ Cfg = {
     -- |___/\___|_|_|_|_| |_|\__, |
     --                       |___/
     Selling = {
-        minPolice = 0,                -- Determines the minimum police required to sell drugs.
-        streetSales = 'pool',         -- Determines if street sale peds are fetched from the pool or spawned. ('pool' or 'spawn')
-        poolDistance = 100,           -- Determines the distance from the player to fetch street sale peds. Would recommend 100.
-        pedFrequency = { 5, 10 },     -- Determines the frequency of ped spawning/fetching in seconds. (min, max)
-        rejectChance = 10,            -- Determines the percent chance of a rejected sale. (1-100)
-        robberyChance = 10,           -- Determines the percent chance of a robbery attempt, if sale is rejected. (1-100)
-        streetQuantity = { 1, 3 },    -- Determines the quantity of drugs bought by street sale peds. (min, max)
-        bulkQuantity = { 750, 1000 }, -- Determines the quantity of drugs bought by bulk sale peds. (min, max)
-        bulkMeetTime = 10,            -- Determines the time in minutes you have to reach the meetup location.
-        account = 'black_money',      -- Determines the account to deposit money into.
-        drugs = {                     -- Determines drugs that can be sold. Add as many as you like.
-            ['weed'] = {              -- Item Name
-                street = { 15, 20 },  -- Street Price (min, max)
-                bulk = { 5, 10 },     -- Bulk Price (min, max)
-            },
-            ['cocaine'] = {
-                street = { 25, 30 },
-                bulk = { 10, 15 },
-            },
-            ['meth'] = {
-                street = { 35, 40 },
-                bulk = { 15, 20 },
-            },
+    minPolice = 0,                -- Determines the minimum police required to sell drugs.
+    streetSales = 'spawn',         -- Determines if street sale peds are fetched from the pool or spawned. ('pool' or 'spawn')
+    poolDistance = 100,           -- Determines the distance from the player to fetch street sale peds. Would recommend 100.
+    pedFrequency = { 3, 5 },     -- Determines the frequency of ped spawning/fetching in seconds. (min, max)
+    rejectChance = 3,            -- Determines the percent chance of a rejected sale. (1-100)
+    robberyChance = 100,           -- Determines the percent chance of a robbery attempt, if sale is rejected. (1-100)
+    streetQuantity = { 1, 20 },    -- FIX: Street sales should require 1-3 drugs only
+    bulkQuantity = { 750, 1000 }, -- Determines the quantity of drugs bought by bulk sale peds. (min, max)
+    bulkMeetTime = 10,            -- Determines the time in minutes you have to reach the meetup location.
+    account = 'black_money',      -- Determines the account to deposit money into.
+    drugs = {                     -- Determines drugs that can be sold. Add as many as you like.
+        ['weed'] = {              -- Item Name
+            street = { 800, 1000 },  -- Street Price (min, max)
+            bulk = { 1500, 1800 },     -- Bulk Price (min, max)
         },
+        ['cocaine'] = {
+            street = { 1000, 1200 },
+            bulk = { 1800, 2000 },
+        },
+        ['meth'] = {
+            street = { 1200, 1500 },
+            bulk = { 2000, 2500 },
+        },
+    },
         meetupCoords = { -- Determines the coordinates of the meetup locations on bulk sales.
             vec4(201.06, -2000.82, 17.86, 230.26),
             vec4(414.41, -2051.13, 21.22, 141.53),
@@ -84,8 +84,8 @@ Cfg = {
     --  / / (_) | | | |  __/\__ \
     -- /___\___/|_| |_|\___||___/
     Zones = {
-        enabled = false,                        -- Determines if the sell zones feature is enabled.
-        zoneCoords = {                         -- You can add as many zones as you like, following formatting. (https://overextended.dev/ox_lib/Modules/Zones/Shared#zone-creation-script)
+        enabled = false,                        -- DISABLED zone restrictions - you can sell anywhere now!
+        zoneCoords = {                         -- Zone coordinates (not used since enabled = false)
             {
                 vec3(123.16, -1937.44, 20.72), -- This zone covers most of the Grove area.
                 vec3(122.71, -1945.11, 20.72),

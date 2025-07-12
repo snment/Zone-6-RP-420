@@ -18,5 +18,5 @@ Cfg = {
     Notification = 'ox', -- 'default', 'ox', 'custom'
 
     -- Choose the carlock system you want to use. 'custom' can be configured in your frameworks bridge.
-    CarLock = wasabi, -- 'qb', 'wasabi', 'mrnewb', 'quasar', 'custom', false to disable
+    CarLock = 'wasabi', -- 'qb', 'wasabi', 'mrnewb', 'quasar', 'custom', false to disable
 } 

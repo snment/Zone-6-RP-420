@@ -96,6 +96,10 @@ return {
 
 	['black_money'] = {
 		label = 'Dirty Money',
+		weight = 1,
+		stack = true,
+		close = true,
+		description = 'Money that has been obtained through illegal means.',
 	},
 
 	['burger'] = {
